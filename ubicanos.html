@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubícanos - Coca-Cola</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 200px;
+        }
+
+        nav {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.activo {
+            background-color: red;
+            border-radius: 5px;
+        }
+
+        .contenedor {
+            display: flex;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        aside {
+            width: 20%;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        aside ul li a:hover,
+        aside ul li a.activo {
+            background-color: red;
+        }
+
+        main {
+            width: 75%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        main h1 {
+            color: red;
+            margin-bottom: 15px;
+        }
+
+        .mapa {
+            width: 100%;
+            height: 400px;
+            border: 2px solid red;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .contacto {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .contacto p {
+            margin: 8px 0;
+        }
+
+        .contacto strong {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagenes/logo.png" alt="Coca-Cola">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes_somos.html">Quienes somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="garantia.html">Garantía</a></li>
+            <li><a href="contactenos.html">Contáctenos</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+
+        <aside>
+            <ul>
+                <li><a href="index.html">🏠 Inicio</a></li>
+                <li><a href="servicios.html">⚙️ Servicios</a></li>
+                <li><a href="productos.html">🛒 Productos</a></li>
+                <li><a href="ubicanos.html" class="activo">📍 Ubícanos</a></li>
+                <li><a href="contáctenos.html">📞 Contáctenos</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <h1>Ubícanos</h1>
+            <p>Aquí puedes encontrarnos:</p>
+
+            <div class="mapa">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    style="border:0"
+                    allowfullscreen 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.9150953778727!2d-69.93875572428246!3d18.47157377076507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f17d015bbf%3A0x90b7eb392d066ac4!2sCoca-Cola%20Company!5e0!3m2!1ses!2sdo!4v1711047984632!5m2!1ses!2sdo">
+                </iframe>
+            </div>
+
+            <div class="contacto">
+                <p><strong>Dirección:</strong> Avenida John F. Kennedy, Santo Domingo, República Dominicana</p>
+                <p><strong>Horario:</strong> Lunes a Viernes - 8:00 AM a 5:00 PM</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - Coca-Cola</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 200px;
+        }
+
+        nav {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.activo {
+            background-color: red;
+            border-radius: 5px;
+        }
+
+        .contenedor {
+            display: flex;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        aside {
+            width: 20%;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        aside ul li a:hover,
+        aside ul li a.activo {
+            background-color: red;
+        }
+
+        main {
+            width: 75%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        main h1 {
+            color: red;
+            margin-bottom: 15px;
+        }
+
+        .formulario {
+            margin-top: 20px;
+        }
+
+        .formulario label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .formulario input,
+        .formulario textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .formulario button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .formulario button:hover {
+            background-color: darkred;
+        }
+
+        .contacto {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .contacto p {
+            margin: 8px 0;
+        }
+
+        .contacto strong {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagenes/logo.png" alt="Coca-Cola">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes_somos.html">Quienes somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="garantia.html">Garantía</a></li>
+            <li><a href="contactenos.html" class="activo">Contáctenos</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+
+        <aside>
+            <ul>
+                <li><a href="index.html">🏠 Inicio</a></li>
+                <li><a href="servicios.html">⚙️ Servicios</a></li>
+                <li><a href="productos.html">🛒 Productos</a></li>
+                <li><a href="ubicanos.html">📍 Ubícanos</a></li>
+                <li><a href="contáctenos.html" class="activo">📞 Contáctenos</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <h1>Contáctenos</h1>
+            <p>Ponte en contacto con nosotros completando el siguiente formulario:</p>
+
+            <div class="formulario">
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div class="contacto">
+                <p><strong>Dirección:</strong> Avenida John F. Kennedy, Santo Domingo, República Dominicana</p>
+                <p><strong>Teléfono:</strong> +1 809 555 1234</p>
+                <p><strong>Email:</strong> contacto@cocacola.com.do</p>
+                <p><strong>Horario:</strong> Lunes a Viernes - 8:00 AM a 5:00 PM</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

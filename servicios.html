@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Coca-Cola</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 200px;
+        }
+
+        nav {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.activo {
+            background-color: red;
+            border-radius: 5px;
+        }
+
+        .contenedor {
+            display: flex;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        aside {
+            width: 20%;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        aside ul li a:hover,
+        aside ul li a.activo {
+            background-color: red;
+        }
+
+        main {
+            width: 75%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        main h1 {
+            color: red;
+            margin-bottom: 15px;
+        }
+
+        .servicio {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f5f5f5;
+            border-left: 5px solid red;
+            border-radius: 5px;
+        }
+
+        .servicio h2 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagenes/logo.png" alt="Coca-Cola">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes_somos.html">Quienes somos</a></li>
+            <li><a href="servicios.html" class="activo">Servicios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="garantia.html">Garantía</a></li>
+            <li><a href="contactenos.html">Contáctenos</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor">
+
+        <aside>
+            <ul>
+                <li><a href="index.html">🏠 Inicio</a></li>
+                <li><a href="servicios.html" class="activo">⚙️ Servicios</a></li>
+                <li><a href="productos.html">🛒 Productos</a></li>
+                <li><a href="ubicanos.html">📍 Ubícanos</a></li>
+                <li><a href="contáctenos.html">📞 Contáctenos</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <h1>Servicios de Coca-Cola</h1>
+            <p>Ofrecemos una amplia gama de servicios para garantizar la mejor experiencia con nuestros productos.</p>
+
+            <div class="servicio">
+                <h2>Distribución y logística</h2>
+                <p>Garantizamos la entrega rápida y eficiente de nuestros productos en todo el mundo.</p>
+            </div>
+
+            <div class="servicio">
+                <h2>Personalización de productos</h2>
+                <p>Ofrecemos opciones de personalización para eventos y promociones especiales.</p>
+            </div>
+
+            <div class="servicio">
+                <h2>Asesoría comercial</h2>
+                <p>Brindamos asesoría a negocios y clientes para maximizar el rendimiento de nuestras bebidas.</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
